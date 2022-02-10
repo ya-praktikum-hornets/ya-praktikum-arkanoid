@@ -1,16 +1,29 @@
 const config = {
   root: true,
-  extends: [
-    'eslint:recommended'
-  ],
-  parser: "@babel/eslint-parser",
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module"
-
-  },
   "env": {
     "es6": true
+  },
+  extends: [
+    'eslint:recommended',
+    'prettier'
+  ],
+  rules: {
+    'no-nested-ternary': 'error',
+    'no-unneeded-ternary': 'error',
+    'no-var': 'error',
+
+    'no-else-return': 'error',
+    'max-len': ['error', {
+      code: 120
+    }],
+  },
+  parser: "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
   },
   "overrides": [
     {
@@ -27,7 +40,7 @@ const config = {
       "rules": {
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
-        "react/prop-types": "off"
+        "react/prop-types": ["warn"],
       },
       "settings": {
         "react": {

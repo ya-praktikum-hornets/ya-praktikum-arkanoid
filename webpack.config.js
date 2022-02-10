@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const StylelintPlugin = require('stylelint-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
   mode: 'none',
@@ -29,12 +29,18 @@ module.exports = {
     ],
   },
   output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, 'build')
+    filename: '[name].[chunkhash].bundle.js',
+    path: path.resolve(__dirname, 'build'),
+    clean: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'public', 'index.html')
+    }),
+    new ESLintPlugin({
+      eslintPath: require.resolve('eslint'),
+      threads: true,
+      fix: true
     })
   ]
 }
