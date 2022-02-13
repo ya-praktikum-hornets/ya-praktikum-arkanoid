@@ -1,7 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ESLintPlugin = require('eslint-webpack-plugin');
-const PrettierPlugin = require("prettier-webpack-plugin");
 
 module.exports = {
   mode: 'none',
@@ -33,12 +31,6 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'public', 'index.html'),
-    }),
-    new PrettierPlugin(),
-    new ESLintPlugin({
-      eslintPath: require.resolve('eslint'),
-      threads: true,
-      fix: true,
     }),
   ],
 };
