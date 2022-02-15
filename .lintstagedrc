@@ -1,0 +1,7 @@
+{
+    "*.(ts|js)x": [
+      "eslint --config .eslintrc.js --fix src/**/*.(ts)x",
+      "git add"
+    ],
+    "**/*": "prettier --write ./ --ignore-unknown"
+}
