@@ -28,6 +28,11 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
     clean: true,
   },
+  devServer: {
+    hot: true,
+    port: 3000,
+    historyApiFallback: true,
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'public', 'index.html'),

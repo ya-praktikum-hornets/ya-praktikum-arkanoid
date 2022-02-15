@@ -4,24 +4,18 @@ const config = {
     es6: true,
   },
   settings: {
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
-    "import/resolver": {
-      "typescript": {
-        "alwaysTryTypes": true,
-        "project": "path/to/folder",
-        "project": "packages/*/tsconfig.json",
-        "project": [
-          "packages/module-a/tsconfig.json",
-          "packages/module-b/tsconfig.json"
-        ],
-        "project": [
-          "packages/*/tsconfig.json",
-          "other-packages/*/tsconfig.json"
-        ]
-      }
-    }
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+        project: 'path/to/folder',
+        project: 'packages/*/tsconfig.json',
+        project: ['packages/module-a/tsconfig.json', 'packages/module-b/tsconfig.json'],
+        project: ['packages/*/tsconfig.json', 'other-packages/*/tsconfig.json'],
+      },
+    },
   },
   extends: ['eslint:recommended', 'prettier'],
   plugins: ['import'],
@@ -29,7 +23,7 @@ const config = {
     'no-nested-ternary': 'error',
     'no-unneeded-ternary': 'error',
     'no-var': 'error',
-    "import/no-unresolved": "error",
+    'import/no-unresolved': 'error',
     'no-else-return': 'error',
     'max-len': [
       'error',
@@ -54,7 +48,7 @@ const config = {
       extends: [
         'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended',
-        'airbnb-typescript'
+        'airbnb-typescript',
       ],
       rules: {
         'react-hooks/rules-of-hooks': 'error',
