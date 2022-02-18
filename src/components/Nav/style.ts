@@ -11,14 +11,14 @@ const NavLink = styled.nav<{ asButton?: boolean }>`
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
-    color: ${({asButton}) => asButton ? '#fff' : '#272C32'} ;
+    color: ${({ asButton, theme }) => asButton ? theme.colors.white : theme.colors.text} ;
     text-decoration: none;
     text-transform: uppercase;
 
-    ${({asButton}) => asButton && css`
+    ${({ asButton }) => asButton && css`
         display: block;
         padding: 10px 26px;
-        background: #0B82FF;
+        background: ${({ theme }) => theme.colors.primary};
         border-radius: 4px;
     `}
 `;

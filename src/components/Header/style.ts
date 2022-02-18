@@ -7,7 +7,7 @@ const HeaderElement = styled.header`
     width: 100%;
     height: 70px;
     padding: 0 16px;
-    background: #fff;
+    background: ${({ theme }) => theme.colors.containerBg};
 
     img {
         width: 177px;

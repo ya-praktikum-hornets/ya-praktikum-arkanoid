@@ -6,14 +6,14 @@ const Title = styled.h1`
     font-size: 48px;
     line-height: 58px;
     text-align: center;
-    color: #FFFFFF;
+    color: ${({ theme }) => theme.colors.white};
 `;
 
 const Subtitle = styled.p`
     font-weight: 500;
     font-size: 24px;
     text-align: center;
-    color: #FFFFFF;
+    color: ${({ theme }) => theme.colors.white};
     margin-bottom: 40px;
 `;
 
