@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
-const ButtonElement = styled.button`
+const ButtonElement = styled.button<{primary: boolean}>`
+    max-width: 250px;
     width: 100%;
     height: 52px;
 
@@ -10,7 +11,7 @@ const ButtonElement = styled.button`
     font-weight: 600;
     font-size: 14px;
     color: #fff;
-    background: #0B82FF;
+    background: ${({ primary }) => primary ? '#0B82FF' : '#333333'};
     border-radius: 6px;
 `;
 

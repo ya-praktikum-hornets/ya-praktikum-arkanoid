@@ -1,10 +1,14 @@
 import React from 'react';
+import { Home } from './pages';
+
+import GlobalStyle from './styles/global';
 
 function App() {
   return (
-    <div>
-      <h1>Игра игрушка игрища!!!!!</h1>
-    </div>
+    <>
+      <Home />
+      <GlobalStyle />
+    </>
   );
 }
 export default App;
