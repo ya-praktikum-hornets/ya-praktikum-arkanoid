@@ -1,14 +1,16 @@
 import React from 'react';
+
+import { Nav } from '..';
+
 import { HeaderElement } from './style';
-
+import { HeaderProps } from '../../types';
 import logo from '../../../public/images/logo.svg';
-import { Nav } from '../../components';
 
-const Header = () => {
+const Header = (props: HeaderProps) => {
     return (
         <HeaderElement>
             <img src={logo} />
-            <Nav />
+            <Nav {...props} />
         </HeaderElement>
     );
 }
