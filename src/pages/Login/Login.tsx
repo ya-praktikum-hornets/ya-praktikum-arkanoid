@@ -6,12 +6,12 @@ function Login() {
     return (
         <>
             <Header isLogin />
-            <Container>
+            <Container justify='center' align='center'>
                 <LoginForm>
                     <Form>
                         <Input type="text" name="login" placeholder="Login" />
                         <Input type="password" name="password" placeholder="Password" />
-                        <Button>Войти</Button>
+                        <Button primary>Войти</Button>
                     </Form>
                 </LoginForm>
             </Container>
