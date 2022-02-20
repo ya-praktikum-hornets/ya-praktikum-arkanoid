@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Form, Header, Container, SignInForm, Button, Input } from '@components';
+import { Form, Header, Container, SignInForm, Button, TextField, PasswordField, PhoneField, EmailField } from '@components';
 
 function SingIn() {
     return (
@@ -9,12 +9,12 @@ function SingIn() {
             <Container justify='center' align='center'>
                 <SignInForm>
                     <Form>
-                        <Input type="text" name="firstName" placeholder="Имя" />
-                        <Input type="text" name="secondName" placeholder="Фамилия" />
-                        <Input type="text" name="login" placeholder="Логин" />
-                        <Input type="tel" name="phone" placeholder="Телефон" />
-                        <Input type="email" name="email" placeholder="Почта" />
-                        <Input type="password" name="password" placeholder="Пароль" />
+                        <TextField name="firstName" placeholder="Имя" />
+                        <TextField name="secondName" placeholder="Фамилия" />
+                        <TextField name="login" placeholder="Логин" />
+                        <PhoneField name="phone" placeholder="Телефон" />
+                        <EmailField name="email" placeholder="Почта" />
+                        <PasswordField name="password" placeholder="Пароль" />
                         <Button primary>Зарегистрироваться</Button>
                     </Form>
                 </SignInForm>

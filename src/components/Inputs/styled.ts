@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { InputProps } from './Input';
+import { InputProps } from './Inputs';
 
 const StyledInput = styled.input<InputProps>`
     width: 100%;

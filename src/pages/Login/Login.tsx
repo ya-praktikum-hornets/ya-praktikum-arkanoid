@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Form, Header, Container, LoginForm, Button, Input } from '@components';
+import { Form, Header, Container, LoginForm, Button, TextField, PasswordField } from '@components';
 
 function Login() {
     return (
@@ -9,8 +9,8 @@ function Login() {
             <Container justify='center' align='center'>
                 <LoginForm>
                     <Form>
-                        <Input type="text" name="login" placeholder="Login" />
-                        <Input type="password" name="password" placeholder="Password" />
+                        <TextField name="login" placeholder="Login" />
+                        <PasswordField name="password" placeholder="Password" />
                         <Button primary>Войти</Button>
                     </Form>
                 </LoginForm>
