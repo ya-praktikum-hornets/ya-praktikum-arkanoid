@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { StyledContainer } from './style';
+import { StyledContainer } from './styled';
 
-const Container: React.FC = (props) => {
+const Container = (props) => {
     return (
         <StyledContainer {...props} />
     );

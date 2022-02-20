@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { StyledForm } from './style';
+import { StyledForm } from './styled';
 
 const Form = (props) => {
     return (

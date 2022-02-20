@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { StyledInput } from './style';
+import { StyledInput } from './styled';
 
 const Input = (props) => {
     return (

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Nav } from '..';
 
-import { StyledHeader } from './style';
+import { StyledHeader } from './styled';
 import { HeaderProps } from '@types';
 import logo from '@public/images/logo.svg';
 

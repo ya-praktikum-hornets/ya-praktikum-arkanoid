@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Header, Container, Button } from '@components';
-import { Subtitle, Title } from './style';
+import { Subtitle, Title } from './styled';
 
 function Home() {
     return (

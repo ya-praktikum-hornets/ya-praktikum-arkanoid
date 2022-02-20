@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { StyledFormLayout, StyledFormPattern, StyledFormWrap } from '../Form/style';
+import { StyledFormLayout, StyledFormPattern, StyledFormWrap } from '../Form/styled';
 
 const LoginForm = (props) => {
     const { children } = props;

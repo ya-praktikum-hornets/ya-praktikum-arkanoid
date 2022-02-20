@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { StyledNav, StyledNavLink } from './style';
+import { StyledNav, StyledNavLink } from './styled';
 import { HeaderProps } from '@types';
 
 const Nav = ({ isLogin }: HeaderProps) => {
