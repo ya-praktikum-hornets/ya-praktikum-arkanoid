@@ -8,7 +8,6 @@ const StyledButton = styled.button<{ primary: boolean }>`
     border: none;
     border-radius: 6px;
 
-    font-family: inherit;
     font-weight: 600;
     font-size: 14px;
     color: ${({ theme }) => theme.colors.white};

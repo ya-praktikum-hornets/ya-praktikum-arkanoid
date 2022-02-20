@@ -13,6 +13,14 @@ const GlobalStyle = createGlobalStyle`
         background: #0B82FF;
         font-family: 'Inter', sans-serif;
     }
+
+    button {
+        font-family: inherit;
+    }
+
+    input {
+        font-family: inherit;
+    }
 `
 
 export default GlobalStyle;

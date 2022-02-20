@@ -3,7 +3,9 @@ import React from 'react';
 import { StyledNav, StyledNavLink } from './styled';
 import { HeaderProps } from '@types';
 
-const Nav = ({ isLogin }: HeaderProps) => {
+const Nav = (props: HeaderProps) => {
+    const { isLogin } = props;
+
     if (isLogin) {
         return (
             <StyledNav>
@@ -14,6 +16,7 @@ const Nav = ({ isLogin }: HeaderProps) => {
             </StyledNav>
         );
     }
+
     return <></>
 }
 
