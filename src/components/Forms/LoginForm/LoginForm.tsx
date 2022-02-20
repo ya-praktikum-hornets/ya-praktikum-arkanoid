@@ -1,17 +1,19 @@
 import React from 'react';
 
-import { FormLayout, FormPattern, FormWrap } from './style';
+import { StyledFormLayout, StyledFormPattern, StyledFormWrap } from '../Form/style';
 
 const LoginForm = (props) => {
+    const { children } = props;
+
     return (
-        <FormLayout>
-            <FormPattern />
-            <FormWrap>
+        <StyledFormLayout>
+            <StyledFormPattern />
+            <StyledFormWrap>
                 <h2>Вход</h2>
-                {props.children}
+                {children}
                 <span>Нет аккаунта?</span>
-            </FormWrap>
-        </FormLayout>
+            </StyledFormWrap>
+        </StyledFormLayout>
     );
 }
 

@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { ContainerElement } from './style';
+import { StyledContainer } from './style';
 
-const Container = (props) => {
+const Container: React.FC = (props) => {
     return (
-        <ContainerElement {...props} />
+        <StyledContainer {...props} />
     );
 }
 

@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { ButtonElement } from './style';
+import { StyledButton } from './style';
 
 const Button = (props) => {
     return (
-        <ButtonElement {...props} />
+        <StyledButton {...props} />
     );
 }
 

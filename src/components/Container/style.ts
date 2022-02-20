@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ContainerElement = styled.main<{
+const StyledContainer = styled.main<{
     justify: 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'space-between' | 'space-around',
     align: 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'baseline',
     direction: 'column' | 'row' | 'column-reverse' | 'row-reverse',
@@ -16,4 +16,4 @@ const ContainerElement = styled.main<{
     gap: ${({gap}) => gap || '0'};
 `;
 
-export { ContainerElement };
+export { StyledContainer };

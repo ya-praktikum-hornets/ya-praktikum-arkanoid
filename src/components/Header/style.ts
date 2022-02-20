@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
-const HeaderElement = styled.header`
+const StyledHeader = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     width: 100%;
     height: 70px;
-    padding: 0 16px;
+
     background: ${({ theme }) => theme.colors.containerBg};
+    padding: 0 16px;
 
     img {
         width: 177px;
@@ -15,4 +17,4 @@ const HeaderElement = styled.header`
     }
 `;
 
-export { HeaderElement };
+export { StyledHeader };

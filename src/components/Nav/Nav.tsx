@@ -1,17 +1,17 @@
 import React from 'react';
 
-import { NavElement, NavLink } from './style';
+import { StyledNav, StyledNavLink } from './style';
 import { HeaderProps } from '@types';
 
 const Nav = ({ isLogin }: HeaderProps) => {
     if (isLogin) {
         return (
-            <NavElement>
-                <NavLink>Форум</NavLink>
-                <NavLink>Лидерборд</NavLink>
-                <NavLink>Настройки</NavLink>
-                <NavLink asButton>Играть</NavLink>
-            </NavElement>
+            <StyledNav>
+                <StyledNavLink>Форум</StyledNavLink>
+                <StyledNavLink>Лидерборд</StyledNavLink>
+                <StyledNavLink>Настройки</StyledNavLink>
+                <StyledNavLink asButton>Играть</StyledNavLink>
+            </StyledNav>
         );
     }
     return <></>

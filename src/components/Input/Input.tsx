@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { InputElement } from './style';
+import { StyledInput } from './style';
 
 const Input = (props) => {
     return (
-        <InputElement {...props} />
+        <StyledInput {...props} />
     );
 }
 

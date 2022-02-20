@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const InputElement = styled.input`
+const StyledInput = styled.input`
     width: 100%;
     height: 48px;
 
@@ -14,4 +14,4 @@ const InputElement = styled.input`
     color: ${({ theme }) => theme.colors.text};
 `;
 
-export { InputElement };
+export { StyledInput };

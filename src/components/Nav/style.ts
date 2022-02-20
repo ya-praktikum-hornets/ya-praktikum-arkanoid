@@ -1,12 +1,12 @@
 import styled, { css } from 'styled-components';
 
-const NavElement = styled.nav`
+const StyledNav = styled.nav`
     display: flex;
     align-items: center;
     gap: 32px;
 `;
 
-const NavLink = styled.nav<{ asButton?: boolean }>`
+const StyledNavLink = styled.nav<{ asButton?: boolean }>`
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -23,4 +23,4 @@ const NavLink = styled.nav<{ asButton?: boolean }>`
     `}
 `;
 
-export { NavElement, NavLink };
+export { StyledNav, StyledNavLink };
