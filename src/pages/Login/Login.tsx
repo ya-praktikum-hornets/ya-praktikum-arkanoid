@@ -11,7 +11,7 @@ function Login() {
                     <Form>
                         <TextField name="login" placeholder="Login" />
                         <PasswordField name="password" placeholder="Password" />
-                        <Button primary>Войти</Button>
+                        <Button color='primary' size='L'>Войти</Button>
                     </Form>
                 </LoginForm>
             </Container>

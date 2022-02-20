@@ -2,20 +2,28 @@ import React from 'react';
 
 import { StyledButton } from './styled';
 
+export enum ButtonSize {
+    XS = 'XS',
+    S = 'S',
+    M = 'M',
+    L = 'L',
+}
+
+export enum ButtonColor {
+    primary = 'primary',
+    secondary = 'secondary',
+    success = 'success',
+    danger = 'danger',
+}
+
 export interface ButtonProps {
-    primary?: boolean,
-    autoFocus?: boolean,
     disabled?: boolean,
-    form?: string,
-    formAction?: string,
-    formEncType?: string,
-    formMethod?: string,
-    formNoValidate?: boolean,
-    formTarget?: string,
     name?: string,
     type?: 'submit' | 'reset' | 'button',
     value?: string | string[] | number,
     children?: React.ReactNode,
+    size: ButtonSize,
+    color: ButtonColor,
 }
 
 const Button = (props: ButtonProps) => {

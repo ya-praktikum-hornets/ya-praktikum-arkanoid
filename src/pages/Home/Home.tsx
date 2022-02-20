@@ -10,7 +10,7 @@ function Home() {
             <Container justify='center' align='center' gap='2rem' direction='column'>
                 <Title>Обманчиво простая и невероятно интересная игра</Title>
                 <Subtitle>Приветствуем вас в Arkanoid</Subtitle>
-                <Button>Начать игру</Button>
+                <Button color='secondary' size='L'>Начать игру</Button>
             </Container>
         </>
     );

@@ -15,7 +15,7 @@ function SingIn() {
                         <PhoneField name="phone" placeholder="Телефон" />
                         <EmailField name="email" placeholder="Почта" />
                         <PasswordField name="password" placeholder="Пароль" />
-                        <Button primary>Зарегистрироваться</Button>
+                        <Button color='primary' size='L'>Зарегистрироваться</Button>
                     </Form>
                 </SignInForm>
             </Container>
