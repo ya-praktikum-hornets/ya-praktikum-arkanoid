@@ -8,6 +8,10 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+
+    html {
+        font-size: 10px;
+    }
     
     body {
         background: #0B82FF;

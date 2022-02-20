@@ -5,23 +5,23 @@ import { HeaderProps } from '../Header/Header';
 const StyledNav = styled.nav`
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 3.2rem;
 `;
 
 const StyledNavLink = styled.nav<HeaderProps>`
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
     color: ${({ type, theme }) => type === 'button' ? theme.colors.white : theme.colors.text} ;
     text-decoration: none;
     text-transform: uppercase;
 
     ${({ type }) => type === 'button' && css`
         display: block;
-        padding: 10px 26px;
+        padding: 1rem 2.6rem;
         background: ${({ theme }) => theme.colors.primary};
-        border-radius: 4px;
+        border-radius: 0.4rem;
     `}
 `;
 

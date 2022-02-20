@@ -4,15 +4,15 @@ import { InputProps } from './Inputs';
 
 const StyledInput = styled.input<InputProps>`
     width: 100%;
-    height: 48px;
+    height: 4.8rem;
 
     background: ${({ theme }) => theme.colors.inputBg};
-    border: 1px solid ${({ theme }) => theme.colors.line};
-    border-radius: 6px;
-    padding: 0 16px;
+    border: 0.1rem solid ${({ theme }) => theme.colors.line};
+    border-radius: 0.6rem;
+    padding: 0 1.6rem;
 
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: ${({ theme }) => theme.colors.text};
 `;
 

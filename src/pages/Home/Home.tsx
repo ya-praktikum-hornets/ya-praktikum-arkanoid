@@ -7,7 +7,7 @@ function Home() {
     return (
         <>
             <Header />
-            <Container justify='center' align='center' gap='20px' direction='column'>
+            <Container justify='center' align='center' gap='2rem' direction='column'>
                 <Title>Обманчиво простая и невероятно интересная игра</Title>
                 <Subtitle>Приветствуем вас в Arkanoid</Subtitle>
                 <Button>Начать игру</Button>

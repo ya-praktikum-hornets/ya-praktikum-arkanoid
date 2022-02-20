@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { ContainerProps } from './Container';
 
 const StyledContainer = styled.main<ContainerProps>`
-    height: calc(100vh - 70px);
-    padding: 20px 0 20px 0;
+    height: calc(100vh - 7rem);
+    padding: 2rem 0;
 
     display: flex;
     justify-content: ${({justify}) => justify || 'stretch'};
