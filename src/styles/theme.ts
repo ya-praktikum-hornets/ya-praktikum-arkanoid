@@ -11,9 +11,13 @@ export const baseTheme = {
         text: '#272C32',
         label: '#999999',
 
-        // Other
+        // Colors
         primary: '#0B82FF',
         secondary: '#272C32',
+        success: '#30BF90',
+        danger: '#FF5730',
+
+        // Colors
         line: '#E8E8E8',
         white: '#ffffff',
     },
