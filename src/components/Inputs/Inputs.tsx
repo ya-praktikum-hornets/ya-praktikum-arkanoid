@@ -26,13 +26,13 @@ const PasswordField = (props: InputProps) => {
 
 const PhoneField = (props: InputProps) => {
     return (
-        <StyledInput {...props} type='password' />
+        <StyledInput {...props} type='tel' />
     );
 }
 
 const EmailField = (props: InputProps) => {
     return (
-        <StyledInput {...props} type='password' />
+        <StyledInput {...props} type='email' />
     );
 }
 
