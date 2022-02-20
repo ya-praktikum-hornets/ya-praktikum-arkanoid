@@ -1,8 +1,9 @@
 import React from 'react';
 
+import { FormProps } from '../Form/Form';
 import { StyledFormLayout, StyledFormPattern, StyledFormWrap } from '../Form/styled';
 
-const SignInForm = (props) => {
+const SignInForm = (props: FormProps) => {
     const { children } = props;
 
     return (

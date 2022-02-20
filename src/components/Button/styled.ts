@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { ButtonProps } from './Button';
 
-const StyledButton = styled.button<{ primary: boolean }>`
+const StyledButton = styled.button<ButtonProps>`
     max-width: 250px;
     width: 100%;
     height: 52px;

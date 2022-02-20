@@ -1,11 +1,7 @@
 import styled from 'styled-components';
+import { ContainerProps } from './Container';
 
-const StyledContainer = styled.main<{
-    justify: 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'space-between' | 'space-around',
-    align: 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'baseline',
-    direction: 'column' | 'row' | 'column-reverse' | 'row-reverse',
-    gap: string,
-}>`
+const StyledContainer = styled.main<ContainerProps>`
     height: calc(100vh - 70px);
     padding: 20px 0 20px 0;
 
