@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Form, Header, Container, LoginForm, Button, Input } from '../../components';
+import { Form, Header, Container, LoginForm, Button, Input } from '@components';
 
 function Login() {
     return (

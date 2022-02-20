@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Form, Header, Container, SignInForm, Button, Input } from '../../components';
+import { Form, Header, Container, SignInForm, Button, Input } from '@components';
 
 function SingIn() {
     return (

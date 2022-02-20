@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import pattern from '../../../../public/images/pattern.svg'
+import pattern from '@public/images/pattern.svg'
 
 const FormLayout = styled.div`
     display: grid;

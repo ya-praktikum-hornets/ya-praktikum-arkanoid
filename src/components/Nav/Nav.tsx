@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { NavElement, NavLink } from './style';
-import { HeaderProps } from '../../types';
+import { HeaderProps } from '@types';
 
 const Nav = ({ isLogin }: HeaderProps) => {
     if (isLogin) {

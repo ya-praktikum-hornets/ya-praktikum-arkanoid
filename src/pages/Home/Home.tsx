@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Header, Container, Button } from '../../components';
+import { Header, Container, Button } from '@components';
 import { Subtitle, Title } from './style';
 
 function Home() {
