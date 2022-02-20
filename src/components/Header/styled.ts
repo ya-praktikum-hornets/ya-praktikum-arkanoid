@@ -10,11 +10,6 @@ const StyledHeader = styled.header`
 
     background: ${({ theme }) => theme.colors.containerBg};
     padding: 0 16px;
-
-    img {
-        width: 177px;
-        height: 18px;
-    }
 `;
 
 export { StyledHeader };

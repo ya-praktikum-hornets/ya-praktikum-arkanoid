@@ -1,15 +1,12 @@
 import React from 'react';
 
-import { Nav } from '..';
-
 import { StyledHeader } from './styled';
-import { HeaderProps } from '@types';
-import logo from '@public/images/logo.svg';
+import { Logo, Nav } from '@components';
 
-const Header = (props: HeaderProps) => {
+const Header = (props) => {
     return (
         <StyledHeader>
-            <img src={logo} />
+            <Logo />
             <Nav {...props} />
         </StyledHeader>
     );
