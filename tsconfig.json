@@ -1,22 +1,28 @@
 {
+  "exclude": ["node_modules","client" ],
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "ESNext",
     "module": "commonjs",
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
+    "outDir": "build",
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
     "resolveJsonModule": true,
-    "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react"
-  },
-  "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx"]
+    "allowSyntheticDefaultImports": true,
+    "removeComments": true,
+    "typeRoots": ["node_modules/@types"],
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  }
 }

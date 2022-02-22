@@ -25,7 +25,7 @@ module.exports = {
   },
   output: {
     filename: '[name].[chunkhash].bundle.js',
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, '../build/client'),
     clean: true,
   },
   devServer: {
