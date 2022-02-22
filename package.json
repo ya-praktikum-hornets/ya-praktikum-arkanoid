@@ -6,7 +6,7 @@
   "scripts": {
     "prestart": "npm run build --prefix client",
     "serve": "cross-env NODE_ENV=development nodemon --config ./nodemon.config.json",
-    "build": "tsc --build tsconfig.json",
+    "build": "cross-env NODE_ENV=production tsc --build tsconfig.json",
     "start": "cross-env NODE_ENV=production node ./build/server.js"
   },
   "author": "",
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
-    "@types/node": "^17.0.19"
+    "@types/node": "^17.0.19",
+    "nodemon": "^2.0.15"
   }
 }
