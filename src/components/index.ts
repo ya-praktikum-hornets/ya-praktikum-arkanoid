@@ -1,6 +1,6 @@
 export { default as Header } from './Header/Header';
 export { default as Nav } from './Nav/Nav';
-export { default as Button } from './Button/Button';
+export { Button, ButtonType, ButtonSize } from './Button/Button';
 export { TextField, PasswordField, PhoneField, EmailField } from './Inputs/Inputs';
 export { default as Logo } from './Logo/Logo';
 export { default as Form } from './Forms/Form/Form';

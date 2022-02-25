@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Form, Header, Container, LoginForm, Button, TextField, PasswordField } from '@components';
+import { Form, Header, Container, LoginForm, Button, ButtonType, ButtonSize, TextField, PasswordField } from '@components';
 
 function Login() {
     return (
@@ -11,7 +11,7 @@ function Login() {
                     <Form>
                         <TextField name="login" placeholder="Login" />
                         <PasswordField name="password" placeholder="Password" />
-                        <Button color='primary' size='L'>Войти</Button>
+                        <Button buttonType={ButtonType.primary} size={ButtonSize.L}>Войти</Button>
                     </Form>
                 </LoginForm>
             </Container>

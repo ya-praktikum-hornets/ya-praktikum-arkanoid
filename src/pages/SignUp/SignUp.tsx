@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Form, Header, Container, SignInForm, Button, TextField, PasswordField, PhoneField, EmailField } from '@components';
+import { Form, Header, Container, SignInForm,  Button, ButtonType, ButtonSize, TextField, PasswordField, PhoneField, EmailField } from '@components';
 
 function SingIn() {
     return (
@@ -15,7 +15,7 @@ function SingIn() {
                         <PhoneField name="phone" placeholder="Телефон" />
                         <EmailField name="email" placeholder="Почта" />
                         <PasswordField name="password" placeholder="Пароль" />
-                        <Button color='primary' size='L'>Зарегистрироваться</Button>
+                        <Button buttonType={ButtonType.primary} size={ButtonSize.L}>Зарегистрироваться</Button>
                     </Form>
                 </SignInForm>
             </Container>
