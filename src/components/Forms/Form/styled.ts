@@ -11,7 +11,6 @@ const StyledFormLayout = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    height: 100%;
     max-height: 65rem;
     min-height: 58rem;
 

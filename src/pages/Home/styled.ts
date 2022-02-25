@@ -6,14 +6,14 @@ const Title = styled.h1`
     font-size: 4.8rem;
     line-height: 5.8rem;
     text-align: center;
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.invertTitle};
 `;
 
 const Subtitle = styled.p`
     font-weight: 500;
     font-size: 2.4rem;
     text-align: center;
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.invertTitle};
     margin-bottom: 4rem;
 `;
 

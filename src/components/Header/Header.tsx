@@ -5,7 +5,7 @@ import { Logo, Nav } from '@components';
 
 export interface HeaderProps {
     type?: 'link' | 'button',
-    isLogin?: boolean,
+    isLoggedIn?: boolean,
 }
 
 const Header = (props: HeaderProps) => {

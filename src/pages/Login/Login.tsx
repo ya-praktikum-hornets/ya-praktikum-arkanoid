@@ -5,7 +5,7 @@ import { Form, Header, Container, LoginForm, Button, ButtonType, ButtonSize, Tex
 function Login() {
     return (
         <>
-            <Header isLogin />
+            <Header isLoggedIn />
             <Container justify='center' align='center'>
                 <LoginForm>
                     <Form>

@@ -31,19 +31,19 @@ const sizes: StyledVariants<ButtonSize> = {
 
 const types: StyledVariants<ButtonType> = {
     [ButtonType.primary]: css`
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.buttonText};
     background: ${({ theme }) => theme.colors.primary};
     `,
     [ButtonType.secondary]: css`
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.buttonText};
     background: ${({ theme }) => theme.colors.secondary};
     `,
     [ButtonType.success]: css`
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.buttonText};
     background: ${({ theme }) => theme.colors.success};
     `,
     [ButtonType.danger]: css`
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.buttonText};
     background: ${({ theme }) => theme.colors.danger};
 `
 }

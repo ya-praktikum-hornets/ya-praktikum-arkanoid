@@ -12,8 +12,7 @@ const StyledNavLink = styled.nav<HeaderProps>`
     font-style: normal;
     font-weight: 600;
     font-size: 1.4rem;
-    line-height: 1.7rem;
-    color: ${({ type, theme }) => type === 'button' ? theme.colors.white : theme.colors.text} ;
+    color: ${({ type, theme }) => type === 'button' ? theme.colors.buttonText : theme.colors.text} ;
     text-decoration: none;
     text-transform: uppercase;
 

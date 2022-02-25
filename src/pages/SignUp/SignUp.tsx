@@ -5,7 +5,7 @@ import { Form, Header, Container, SignInForm,  Button, ButtonType, ButtonSize, T
 function SingIn() {
     return (
         <>
-            <Header isLogin />
+            <Header isLoggedIn />
             <Container justify='center' align='center'>
                 <SignInForm>
                     <Form>

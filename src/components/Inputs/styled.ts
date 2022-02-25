@@ -9,7 +9,7 @@ const StyledInput = styled.input<InputProps>`
     background: ${({ theme }) => theme.colors.inputBg};
     border: 0.1rem solid ${({ theme }) => theme.colors.line};
     border-radius: 0.6rem;
-    padding: 0 1.6rem;
+    padding: 0 1.1em;
 
     font-weight: 400;
     font-size: 1.4rem;

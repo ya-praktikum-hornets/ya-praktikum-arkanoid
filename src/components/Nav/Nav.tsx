@@ -4,9 +4,9 @@ import { HeaderProps } from '../Header/Header';
 import { StyledNav, StyledNavLink } from './styled';
 
 const Nav = (props: HeaderProps) => {
-    const { isLogin } = props;
+    const { isLoggedIn } = props;
 
-    if (isLogin) {
+    if (isLoggedIn) {
         return (
             <StyledNav>
                 <StyledNavLink>Форум</StyledNavLink>

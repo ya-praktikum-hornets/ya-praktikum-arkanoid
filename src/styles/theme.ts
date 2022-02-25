@@ -8,7 +8,9 @@ export const baseTheme = {
 
         // Text
         title: '#272C32',
+        invertTitle: '#ffffff',
         text: '#272C32',
+        buttonText: '#ffffff',
         label: '#999999',
 
         // Colors
@@ -16,10 +18,7 @@ export const baseTheme = {
         secondary: '#272C32',
         success: '#30BF90',
         danger: '#FF5730',
-
-        // Colors
-        line: '#E8E8E8',
-        white: '#ffffff',
+        line: '#E8E8E8',        
     },
 
     media: {
