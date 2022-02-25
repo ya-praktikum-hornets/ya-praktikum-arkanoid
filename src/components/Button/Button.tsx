@@ -9,7 +9,7 @@ export enum ButtonSize {
     L = 'L',
 }
 
-export enum ButtonColor {
+export enum ButtonType {
     primary = 'primary',
     secondary = 'secondary',
     success = 'success',
@@ -23,7 +23,7 @@ export interface ButtonProps {
     value?: string | string[] | number,
     children?: React.ReactNode,
     size: ButtonSize,
-    color: ButtonColor,
+    buttonType: ButtonType,
 }
 
 const Button = (props: ButtonProps) => {

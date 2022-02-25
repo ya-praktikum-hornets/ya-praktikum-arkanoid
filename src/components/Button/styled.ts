@@ -1,48 +1,48 @@
 import styled, { css, FlattenInterpolation, FlattenSimpleInterpolation, ThemeProps } from 'styled-components';
 
-import { ButtonProps, ButtonSize, ButtonColor } from './Button';
+import { ButtonProps, ButtonSize, ButtonType } from './Button';
 
 type StyledVariants<E extends string | number> = {
     [key in E]?: FlattenSimpleInterpolation | FlattenInterpolation<ThemeProps<any>>
 }
 
 const sizes: StyledVariants<ButtonSize> = {
-    XS: css`
+    [ButtonSize.XS]: css`
     height: 2.8rem;
     font-size: 1.2rem;
     font-weight: 400;
     `,
-    S: css`
+    [ButtonSize.S]: css`
     height: 3.6rem;
     font-size: 1.4rem;
     font-weight: 400;
     `,
-    M: css`
+    [ButtonSize.M]: css`
     height: 4.8rem;
     font-size: 1.4rem;
     font-weight: 500;
     `,
-    L: css`
+    [ButtonSize.L]: css`
     height: 5.2rem;
     font-size: 1.4rem;
     font-weight: 500;
 `
 }
 
-const colors: StyledVariants<ButtonColor> = {
-    primary: css`
+const types: StyledVariants<ButtonType> = {
+    [ButtonType.primary]: css`
     color: ${({ theme }) => theme.colors.white};
     background: ${({ theme }) => theme.colors.primary};
     `,
-    secondary: css`
+    [ButtonType.secondary]: css`
     color: ${({ theme }) => theme.colors.white};
     background: ${({ theme }) => theme.colors.secondary};
     `,
-    success: css`
+    [ButtonType.success]: css`
     color: ${({ theme }) => theme.colors.white};
     background: ${({ theme }) => theme.colors.success};
     `,
-    danger: css`
+    [ButtonType.danger]: css`
     color: ${({ theme }) => theme.colors.white};
     background: ${({ theme }) => theme.colors.danger};
 `
@@ -56,7 +56,7 @@ const StyledButton = styled.button<ButtonProps>`
     border-radius: 0.6rem;
 
     ${({ size }) => sizes[size]}
-    ${({ color }) => colors[color]}
+    ${({ buttonType }) => types[buttonType]}
 `
 
 export { StyledButton };
