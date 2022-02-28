@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { HeaderProps } from '../Header/Header';
+import { HeaderProps, NavType } from '../Header/Header';
 import { StyledNav, StyledNavLink } from './styled';
 
 const Nav = (props: HeaderProps) => {
@@ -12,7 +12,7 @@ const Nav = (props: HeaderProps) => {
                 <StyledNavLink>Форум</StyledNavLink>
                 <StyledNavLink>Лидерборд</StyledNavLink>
                 <StyledNavLink>Настройки</StyledNavLink>
-                <StyledNavLink type={'button'}>Играть</StyledNavLink>
+                <StyledNavLink type={NavType.button}>Играть</StyledNavLink>
             </StyledNav>
         );
     }

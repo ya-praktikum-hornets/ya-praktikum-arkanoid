@@ -10,10 +10,8 @@ const StyledForm = styled.form`
 const StyledFormLayout = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
-
     max-height: 65rem;
     min-height: 58rem;
-
     background: ${({ theme }) => theme.colors.containerBg};
     border-radius: 1rem;
 `;
@@ -21,10 +19,7 @@ const StyledFormLayout = styled.div`
 const StyledFormPattern = styled.div`
     background: url(${pattern}) no-repeat;
     background-size: cover;
-
     min-width: 35rem;
-    height: 100%;
-
     border-radius: 1rem 0 0 1rem;
 `;
 
