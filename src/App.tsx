@@ -1,12 +1,16 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components'
 
-
+import { Home } from '@pages';
+import GlobalStyle from '@styles/global';
+import { baseTheme } from '@styles/theme';
 
 function App() {
   return (
-    <div>
-      <h1>Welcome to Arkanoid!</h1>
-    </div>
+    <ThemeProvider theme={baseTheme}>
+      <Home />
+      <GlobalStyle />
+    </ThemeProvider>
   );
 }
 export default App;

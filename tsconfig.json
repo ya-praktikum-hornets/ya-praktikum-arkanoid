@@ -15,7 +15,15 @@
     "noUnusedParameters": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@styles/*": ["src/styles/*"],
+      "@types/*": ["src/types/*"],
+      "@public/*": ["public/*"],
+    },
   },
   "exclude": ["node_modules"],
   "include": ["**/*.ts", "**/*.tsx"]
